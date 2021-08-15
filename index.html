@@ -17,44 +17,63 @@
    <body>
       <main>
          <header>
-            <div class="container fixed-top">
-               <div class="d-flex flex-wrap justify-content-center py-3 mb-4">
-                  <a
-                     href="/"
-                     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
-                  >
-                     <img
-                        src="images/ICON/Logo.png"
-                        alt="e-school_Logo"
-                        class="img-fluid"
-                        width="200"
-                        srcset=""
-                     />
-                  </a>
-
-                  <ul class="nav nav-pills align-items-center">
-                     <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="page"
-                           >Books</a
+            <div class="container-fluid top-menu">
+               <div class="container">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="container-fluid">
+                        <img
+                           src="images/ICON/Logo.png"
+                           alt="e-school_Logo"
+                           class="img-fluid"
+                           width="200"
+                           srcset=""
+                        />
+                        <button
+                           class="navbar-toggler"
+                           type="button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#navbarNav"
+                           aria-controls="navbarNav"
+                           aria-expanded="false"
+                           aria-label="Toggle navigation"
                         >
-                     </li>
-                     <li class="nav-item">
-                        <a href="#courses" class="nav-link">Courses</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#others" class="nav-link">Others</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#blogs" class="nav-link">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a
-                           href="#signin"
-                           class="px-3 rounded-pill btn btn-success bg-green btn-pill"
-                           >Sign in</a
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                           class="collapse navbar-collapse d-lg-flex justify-content-end"
+                           id="navbarNav"
                         >
-                     </li>
-                  </ul>
+                           <ul class="navbar-nav">
+                              <li class="nav-item px-3">
+                                 <a
+                                    href="#"
+                                    class="nav-link"
+                                    aria-current="page"
+                                    >Books</a
+                                 >
+                              </li>
+                              <li class="nav-item px-3">
+                                 <a href="#courses" class="nav-link">Courses</a>
+                              </li>
+                              <li class="nav-item px-3">
+                                 <a href="#others" class="nav-link">Others</a>
+                              </li>
+                              <li class="nav-item px-3">
+                                 <a href="#testimonial" class="nav-link"
+                                    >Testimonial</a
+                                 >
+                              </li>
+                              <li class="nav-item px-3">
+                                 <a
+                                    href="#signin"
+                                    class="px-3 rounded-pill btn btn-success bg-green btn-pill"
+                                    >Sign in</a
+                                 >
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </nav>
                </div>
             </div>
             <div class="container pt-125">
@@ -96,7 +115,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-6 col-lg-3">
-                     <div class="single-achiv">
+                     <div class="single-achiv mb-4">
                         <div class="card">
                            <div class="achiv-img">
                               <img
@@ -118,7 +137,7 @@
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3">
-                     <div class="single-achiv">
+                     <div class="single-achiv mb-4">
                         <div class="card">
                            <div class="achiv-img">
                               <img
@@ -140,7 +159,7 @@
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3">
-                     <div class="single-achiv">
+                     <div class="single-achiv mb-4">
                         <div class="card">
                            <div class="achiv-img">
                               <img
@@ -162,7 +181,7 @@
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3">
-                     <div class="single-achiv">
+                     <div class="single-achiv mb-4">
                         <div class="card">
                            <div class="achiv-img">
                               <img
@@ -187,12 +206,12 @@
             </div>
          </section>
 
-         <section class="courses pt-125 mb-5">
+         <section class="courses pt-125" id="courses">
             <div class="container">
                <h2 class="text-center py-5 fw-bold">Online Courses</h2>
                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                   <div class="col">
-                     <div class="card h-100">
+                     <div class="card h-100 shadow">
                         <div class="courses-img">
                            <img
                               src="images/Photos/Morder pyschology.png"
@@ -242,7 +261,7 @@
                      </div>
                   </div>
                   <div class="col">
-                     <div class="card h-100">
+                     <div class="card h-100 shadow">
                         <div class="courses-img">
                            <img
                               src="images/Photos/Morder psyc.png"
@@ -292,7 +311,7 @@
                      </div>
                   </div>
                   <div class="col">
-                     <div class="card h-100">
+                     <div class="card h-100 shadow">
                         <div class="courses-img">
                            <img
                               src="images/Photos/Morder pychons.png"
@@ -345,22 +364,203 @@
             </div>
          </section>
 
-         <section class="testimomial">
+         <section class="testimomial pt-125 pb-100" id="testimonial">
             <div class="container">
+               <h2 class="text-center py-5 fw-bold">Testimonial</h2>
                <div class="row justify-content-center">
                   <div class="col-lg-8">
-                     <div class="all-testimonial"></div>
+                     <div
+                        id="carouselExampleControls"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                     >
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <div class="single-testimonial">
+                                 <div
+                                    class="row align-items-center justify-content-center"
+                                 >
+                                    <div class="col-md-3">
+                                       <img
+                                          src="images/Photos/Man.png"
+                                          alt=""
+                                          class="img-fluid"
+                                       />
+                                    </div>
+                                    <div class="col-md-8 offset-1">
+                                       <div class="testimonial-content">
+                                          <p>
+                                             Lorem ipsum dolor sit amet
+                                             consectetur adipisicing elit.
+                                             Mollitia reprehenderit vero
+                                             corporis hic ipsa quaerat facere?
+                                             Quas odit error laudantium dolorum
+                                             odio? Voluptates eaque sapiente
+                                             quibusdam tempore,
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="carousel-item">
+                              <div class="single-testimonial">
+                                 <div class="row align-items-center">
+                                    <div class="col-3">
+                                       <div class="testimonial-img">
+                                          <img
+                                             src="images/Photos/Man.png"
+                                             alt=""
+                                             class="img-fluid"
+                                          />
+                                       </div>
+                                    </div>
+                                    <div class="col-8 offset-1">
+                                       <div class="testimonial-content">
+                                          <p>
+                                             ipsum dolor sit amet consectetur
+                                             adipisicing elit. Mollitia
+                                             reprehenderit vero corporis hic
+                                             ipsa quaerat facere? Quas odit
+                                             error laudantium dolorum odio?
+                                             Voluptates eaque sapiente quibusdam
+                                             tempore,
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="carousel-item">
+                              <div class="single-testimonial">
+                                 <div class="row align-items-center">
+                                    <div class="col-3">
+                                       <div class="testimonial-img">
+                                          <img
+                                             src="images/Photos/Man.png"
+                                             alt=""
+                                             class="img-fluid"
+                                          />
+                                       </div>
+                                    </div>
+                                    <div class="col-8 offset-1">
+                                       <div class="testimonial-content">
+                                          <p>
+                                             dolor sit amet consectetur
+                                             adipisicing elit. Mollitia
+                                             reprehenderit vero corporis hic
+                                             ipsa quaerat facere? Quas odit
+                                             error laudantium dolorum odio?
+                                             Voluptates eaque sapiente quibusdam
+                                             tempore,
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <button
+                           class="carousel-control-prev"
+                           type="button"
+                           data-bs-target="#carouselExampleControls"
+                           data-bs-slide="prev"
+                        >
+                           <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                           ></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                           class="carousel-control-next"
+                           type="button"
+                           data-bs-target="#carouselExampleControls"
+                           data-bs-slide="next"
+                        >
+                           <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                           ></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
                   </div>
                </div>
             </div>
          </section>
+         <footer>
+            <div class="continer-fluid">
+               <div class="container pt-5">
+                  <div class="row justify-content-between">
+                     <div class="col-md-6 col-lg-4">
+                        <div class="f-about">
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Deserunt nisi quia ducimus neque
+                              provident officia, optio, doloribus facilis esse
+                              totam consectetur temporibus sint aliquam
+                              molestias!
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-2">
+                        <div class="f-menu">
+                           <h4 class="fw-bold mb-3">Course</h4>
+                           <ul class="ps-0">
+                              <li><a href="">Graphic Design</a></li>
+                              <li><a href="">Web Design</a></li>
+                              <li><a href="">Business</a></li>
+                              <li><a href="">Marketing</a></li>
+                              <li><a href="">Engineering</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-2">
+                        <div class="f-menu">
+                           <h4 class="fw-bold mb-3">Terms</h4>
+                           <ul class="ps-0">
+                              <li><a href="">Graphic Design</a></li>
+                              <li><a href="">Web Design</a></li>
+                              <li><a href="">Business</a></li>
+                              <li><a href="">Marketing</a></li>
+                              <li><a href="">Engineering</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-2">
+                        <div class="f-menu">
+                           <h4 class="fw-bold mb-3">Usefull Link</h4>
+                           <ul class="ps-0">
+                              <li><a href="">Graphic Design</a></li>
+                              <li><a href="">Web Design</a></li>
+                              <li><a href="">Business</a></li>
+                              <li><a href="">Marketing</a></li>
+                              <li><a href="">Engineering</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <p class="text-center pt-5 pb-4">
+                     Copyright © 2020 smart-school.com
+                  </p>
+               </div>
+            </div>
+         </footer>
       </main>
       <!-- CSS only -->
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
          crossorigin="anonymous"
-      />
+         referrerpolicy="no-referrer"
+      ></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+         crossorigin="anonymous"
+      ></script>
+      <script src="js/main.js"></script>
    </body>
 </html>
