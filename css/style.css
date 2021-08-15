@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.text-green {
+   color: #21b573 !important;
+}
+.bg-green {
+   background-color: #21b573 !important;
+}
+body {
+   font-family: 'Poppins', sans-serif;
+}
+.pt-125 {
+   padding-top: 125px;
+}
+header {
+   background: #f0fff0;
+   padding-bottom: 30px;
+}
+.nav-item .nav-link {
+   color: rgb(15, 15, 15);
+}
+.hero-content span {
+   color: #fd511a;
+   padding-bottom: 20px;
+}
+.hero-content p {
+   color: #6c6b6b;
+   line-height: 36px;
+   padding: 20px 0;
+}
+.hero-content h1 {
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 70px;
+   color: #000;
+}
+.single-achiv .card {
+   background: #f8fffb;
+   border-radius: 10px;
+   border: none;
+}
+.single-achiv .card:hover {
+   background: #ffffff;
+   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+   transition: 0.5s all ease;
+}
+.single-achiv .achiv-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 50px;
+}
+.single-achiv .card-title {
+   font-weight: 500;
+   font-size: 24px;
+   color: #413960;
+   line-height: 36px;
+}
+.single-achiv .card p {
+   color: #585859;
+}
+.single-achiv .achiv-img img {
+   width: 70px;
+}
+.courses h2 {
+   font-family: 'Poppins';
+   font-weight: 700;
+   color: #413960;
+}
+
+.courses .card {
+   border-radius: 18px;
+}
+.courses .card .card-footer {
+   background-color: #fff;
+   border-radius: 18px;
+   border-top: none;
+}
+.courses .card-footer img {
+   width: 24px;
+}
